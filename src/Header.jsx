@@ -1,5 +1,5 @@
 import logo from './assets/logo.svg'
-import './header.css'
+import './Header.css'
 
 
 export default function(){
@@ -9,7 +9,7 @@ export default function(){
 	<h2 className="total-balance__title">My balance</h2>
 	<p className="total-balance__amount">$921.48</p>
       </div>
-      <img alt="" src={logo} className="logo"/>
+      <img alt="companyLogo" src={logo} className="logo"/>
     </header>
   )
 };

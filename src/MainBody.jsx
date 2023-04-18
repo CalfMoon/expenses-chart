@@ -1,4 +1,4 @@
-import './Main.css';
+import './MainBody.css';
 import Bargraph from './Bargraph';
 import TotalExpenditure from './TotalExpenditure';
 

@@ -20,14 +20,18 @@
   border-radius: 0.5rem;
 }
 
-.bar-graph__item:hover > .bar-graph__item__bar {
+.bar-graph__item__bar:hover {
   cursor: pointer;
   opacity: 0.7;
-  animation-delay: 1s;
 }
 
-.bar-graph__item:hover::before {
-  content: "$52.36";
+/* doesn't currently work in firefox without settings but its not the most importtant of features */
+.bar-graph__item:has(.bar-graph__item__bar:hover) > .bar-graph__item__price {
+  display: block;
+}
+
+.bar-graph__item__price {
+  display: none;
   font-weight: 700;
   font-size: 1.15rem;
   padding: 0.5rem;
