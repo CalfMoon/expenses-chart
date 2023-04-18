@@ -1,0 +1,26 @@
+header {
+  background-color: var(--soft-red);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.total-balance {
+  color: white;
+}
+
+.total-balance__title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.total-balance__amount {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo {
+  max-height: 3rem;
+}

@@ -1,0 +1,31 @@
+.total-expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.total-expense__this-month__title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--medium-brown);
+}
+
+.total-expense__this-month__amount {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.total-expense__last-month {
+  text-align: right;
+}
+
+.total-expense__last-month__title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--medium-brown);
+}
+
+.total-expense__last-month__percent {
+  font-size: 1.3rem;
+  font-weight: bold;
+}

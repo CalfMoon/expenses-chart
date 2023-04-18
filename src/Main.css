@@ -1,0 +1,17 @@
+main {
+  background-color: var(--very-pale-orange);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.seprator-line {
+  --margin: 1.5rem;
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+  border-color: var(--cream);
+}
+
