@@ -14,15 +14,12 @@ export default function() {
   const heightPerDollar = calcGraphHeight();
   
   return (
-    <ul className="bar-graph">
+    <div className="bar-graph">
       {data.map((item, index) => ( 
 	<li className="bar-graph__item" key={index}>
 	  <p className="bar-graph__item__price">${item.amount}</p>
 	  {/* logic that checks higlihts bar if todays day of week's maches with index of bar and the logic is complex because the graph starts from monday */} 
-	  <div className={`bar-graph__item__bar
-${((index + 1 === dayjs().day())  
-|| (index === 6 && dayjs().day() === 0))
-&& "bar-graph__item__bar--active"}`}
+	<div className={`bar-graph__item__bar ${(((index + 1 === dayjs().day()) || (index === 6 && dayjs().day() === 0))) ? "bar-graph__item__bar--active" : ""}`}
 	       style= {{
 		 height: `${item.amount * heightPerDollar}rem`,
 	       }}
@@ -30,6 +27,6 @@ ${((index + 1 === dayjs().day())
 	  <h2 className="bar-graph__item__name">{item.day}</h2>
 	</li>
       ))}
-    </ul>
+    </div>
   )
 }
